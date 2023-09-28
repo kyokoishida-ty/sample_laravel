@@ -18,5 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('list', function () {
+    return view('list.index');
+});
 
 Route::resource('quizzes', QuizController::class);
